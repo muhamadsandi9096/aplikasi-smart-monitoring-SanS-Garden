@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/monitoring"
+    tools:context=".MonitoringTerung">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="Manual Kontrol"
+        android:textColor="@color/BlackBlue"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <ImageButton
+        android:id="@+id/backmonitoringterung"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_arrow_back_white_24"
+        android:contentDescription="@string/backmonitoringterung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/detail_monitoring"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backmonitoringterung"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/backmonitoringterung"
+        app:layout_constraintTop_toTopOf="@+id/backmonitoringterung" />
+
+    <ImageView
+        android:id="@+id/kotak1monitoringterung"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/kotak"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/greenhousemonitoring"
+        android:contentDescription="@string/greenhouse_monitoring"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintEnd_toEndOf="@+id/kotak1monitoringterung"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/kotak1monitoringterung"
+        app:layout_constraintTop_toTopOf="@+id/kotak1monitoringterung" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/tanaman_terung_1"
+        android:textColor="@color/BlackBlue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="@+id/kotak1monitoringterung"
+        app:layout_constraintTop_toTopOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="@string/bojonggede_kab_bogor"
+        android:textColor="@color/Gray"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="@+id/kotak1monitoringterung"
+        app:layout_constraintTop_toTopOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="0.343"
+        tools:ignore="SmallSp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:background="@drawable/kotakbackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/kotassensor1"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/kotakbackground2"
+                app:layout_constraintBottom_toTopOf="@+id/kotassensor3"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor3"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor3"
+                app:layout_constraintTop_toTopOf="@+id/view5"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/kotassensor2"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/kotakbackground2"
+                app:layout_constraintBottom_toTopOf="@+id/kotassensor4"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor4"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor4"
+                app:layout_constraintTop_toTopOf="@+id/view5"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/kotassensor3"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/kotakbackground2"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintEnd_toEndOf="@+id/view5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="@+id/view5"
+                app:layout_constraintVertical_bias="0.36" />
+
+            <View
+                android:id="@+id/kotassensor4"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/kotakbackground2"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintEnd_toEndOf="@+id/view5"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="@+id/view5"
+                app:layout_constraintVertical_bias="0.36" />
+
+            <View
+                android:id="@+id/kotassensor5"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/kotakbackground2"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor3"
+                app:layout_constraintTop_toBottomOf="@+id/kotassensor3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/kotassensor6"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/kotakbackground2"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor4"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor4"
+                app:layout_constraintTop_toBottomOf="@+id/kotassensor4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/kotassensor7"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/kotakbackground2"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintEnd_toEndOf="@+id/view5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="@+id/view5"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/kotassensor8"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/kotakbackground2"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintEnd_toEndOf="@+id/view5"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="@+id/view5"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/monitoring_tanaman"
+                android:textColor="@color/BlackBlue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/kotassensor1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/others"
+                android:textColor="@color/BlackBlue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/kotassensor7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kotassensor5"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/icon_kelembaban_tanah"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_soil"
+                android:contentDescription="@string/kelembaban_tanah"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor1"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor1"
+                app:layout_constraintHorizontal_bias="0.10"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor1"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor1"
+                app:layout_constraintVertical_bias="0.48000002" />
+
+            <ImageView
+                android:id="@+id/icon_suhu_udara"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_icon_temperature"
+                android:contentDescription="@string/temperature_udara"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor3"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor3"
+                app:layout_constraintHorizontal_bias="0.10"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor3"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor3"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <ImageView
+                android:id="@+id/icon_kelembaban_udara"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_icon_humidity"
+                android:contentDescription="@string/kelembaban_udara"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor4"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor4"
+                app:layout_constraintHorizontal_bias="0.10"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor4"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor4"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <ImageView
+                android:id="@+id/icon_cahaya"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_icon_sunlight"
+                android:contentDescription="@string/cahaya"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor2"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor2"
+                app:layout_constraintHorizontal_bias="0.096"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor2"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor2" />
+
+            <ImageView
+                android:id="@+id/icon_pH"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_ph"
+                android:contentDescription="@string/ph"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor5"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor5"
+                app:layout_constraintHorizontal_bias="0.11"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor5"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor5"
+                app:layout_constraintVertical_bias="0.50" />
+
+            <ImageView
+                android:id="@+id/icon_cuaca"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rainlogo"
+                android:contentDescription="@string/cuaca"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor6"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor6"
+                app:layout_constraintHorizontal_bias="0.096"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor6"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor6" />
+
+            <ImageView
+                android:id="@+id/icon_tangki_air"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/watertanklogo"
+                android:contentDescription="@string/tangki_air"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor7"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor7"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintStart_toStartOf="@+id/kotassensor7"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor7"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/kelembaban_tanah"
+                android:textColor="@color/BlackBlue"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor1"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor1"
+                app:layout_constraintHorizontal_bias="0.452"
+                app:layout_constraintStart_toEndOf="@+id/icon_kelembaban_tanah"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor1"
+                app:layout_constraintVertical_bias="0.147"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/cahaya"
+                android:textColor="@color/BlackBlue"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor2"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor2"
+                app:layout_constraintHorizontal_bias="0.244"
+                app:layout_constraintStart_toEndOf="@+id/icon_cahaya"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor2"
+                app:layout_constraintVertical_bias="0.147"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/temperature_udara"
+                android:textColor="@color/BlackBlue"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor3"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor3"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toEndOf="@+id/icon_suhu_udara"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor3"
+                app:layout_constraintVertical_bias="0.163"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/kelembaban_udara"
+                android:textColor="@color/BlackBlue"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor4"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor4"
+                app:layout_constraintHorizontal_bias="0.581"
+                app:layout_constraintStart_toEndOf="@+id/icon_kelembaban_udara"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor4"
+                app:layout_constraintVertical_bias="0.163"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/ph"
+                android:textColor="@color/BlackBlue"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor5"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor5"
+                app:layout_constraintHorizontal_bias="0.155"
+                app:layout_constraintStart_toEndOf="@+id/icon_pH"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor5"
+                app:layout_constraintVertical_bias="0.213"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/cuaca"
+                android:textColor="@color/BlackBlue"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor6"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor6"
+                app:layout_constraintHorizontal_bias="0.252"
+                app:layout_constraintStart_toEndOf="@+id/icon_cuaca"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor6"
+                app:layout_constraintVertical_bias="0.213"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/tangki_air"
+                android:textColor="@color/BlackBlue"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor7"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor7"
+                app:layout_constraintHorizontal_bias="0.252"
+                app:layout_constraintStart_toEndOf="@+id/icon_tangki_air"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor7"
+                app:layout_constraintVertical_bias="0.213"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/persen"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor1"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor1"
+                app:layout_constraintHorizontal_bias="0.293"
+                app:layout_constraintStart_toEndOf="@+id/icon_kelembaban_tanah"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/celcius"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor3"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor3"
+                app:layout_constraintHorizontal_bias="0.682"
+                app:layout_constraintStart_toEndOf="@+id/icon_suhu_udara"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor3"
+                app:layout_constraintVertical_bias="0.508" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/persen"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor2"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor2"
+                app:layout_constraintHorizontal_bias="0.289"
+                app:layout_constraintStart_toEndOf="@+id/icon_cahaya"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/persen"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor2"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor2"
+                app:layout_constraintHorizontal_bias="0.289"
+                app:layout_constraintStart_toEndOf="@+id/icon_cahaya"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/persen"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor4"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor4"
+                app:layout_constraintHorizontal_bias="0.289"
+                app:layout_constraintStart_toEndOf="@+id/icon_cahaya"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="pH"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor5"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor5"
+                app:layout_constraintHorizontal_bias="0.817"
+                app:layout_constraintStart_toEndOf="@+id/icon_pH"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor5"
+                app:layout_constraintVertical_bias="0.491" />
+
+            <TextView
+                android:id="@+id/kelembaban_tanah_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/bold"
+                android:text="100"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor1"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/icon_kelembaban_tanah"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor1"
+                app:layout_constraintVertical_bias="0.491" />
+
+            <TextView
+                android:id="@+id/cahaya_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/bold"
+                android:text="100"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor2"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/icon_cahaya"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor2" />
+
+            <TextView
+                android:id="@+id/suhu_udara_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/bold"
+                android:text="30"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor3"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/icon_suhu_udara"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor3"
+                app:layout_constraintVertical_bias="0.50" />
+
+            <TextView
+                android:id="@+id/kelembaban_udara_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/bold"
+                android:text="58"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor4"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/icon_kelembaban_udara"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor4" />
+
+            <TextView
+                android:id="@+id/pH_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/bold"
+                android:text="8"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor5"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/icon_pH"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor5"
+                app:layout_constraintVertical_bias="0.491" />
+
+            <TextView
+                android:id="@+id/Cuaca_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/bold"
+                android:text="Terang"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor6"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/icon_cuaca"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor6" />
+
+            <TextView
+                android:id="@+id/tangki_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/bold"
+                android:text="penuh"
+                android:textColor="@color/Gray"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/kotassensor7"
+                app:layout_constraintEnd_toEndOf="@+id/kotassensor7"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/icon_tangki_air"
+                app:layout_constraintTop_toTopOf="@+id/kotassensor7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageButton
+        android:id="@+id/on_button_water"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/logoair"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/off_button_water"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/logoairoff"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/auto_button_water"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/logoairauto"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Switch
+        android:id="@+id/checkBox_auto_button_water"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/manual"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="0.804"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/bold"
+        android:text="Penyiraman"
+        android:textColor="@color/Gray"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_water"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_auto_button_water"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
+        android:id="@+id/on_button_udara"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/buttonudara"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/off_button_udara"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/buttonudarapress"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/auto_button_udara"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/buttonautoudara"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Switch
+        android:id="@+id/checkBox_auto_button_pendingin"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/manual"
+        android:textColor="@color/black"
+        android:outlineAmbientShadowColor="@color/LightGray"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="0.804"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/bold"
+        android:text="Pendinginan"
+        android:textColor="@color/Gray"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_pendingin"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_auto_button_pendingin"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
+        android:id="@+id/on_button_pencahayaan"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/buttoncahaya"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/off_button_pencahayaan"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/buttoncahayapress"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/auto_button_pencahayaan"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/buttonautocahaya"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Switch
+        android:id="@+id/checkBox_auto_button_pencahayaan"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/manual"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotak1monitoringterung"
+        app:layout_constraintVertical_bias="0.804"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/bold"
+        android:text="Pencahayaan"
+        android:textColor="@color/Gray"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_auto_button_pencahayaan"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_auto_button_pencahayaan"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

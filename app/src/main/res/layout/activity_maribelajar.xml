@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGray"
+    tools:context=".Maribelajar">
+
+    <ImageButton
+        android:id="@+id/backmaribelajar"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        android:contentDescription="@string/back" />
+
+    <View
+        android:id="@+id/kotakterong"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/kotak2"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <Button
+        android:id="@+id/viewwebButtonTerung"
+        android:layout_width="118dp"
+        android:layout_height="34dp"
+        android:background="@drawable/buttonlihat"
+        android:contentDescription="@string/tanaman_terung"
+        android:fontFamily="@font/bold"
+        android:text="lihat"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kotakterong"
+        app:layout_constraintEnd_toEndOf="@+id/kotakterong"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toEndOf="@+id/imageterung"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SmallSp" />
+
+    <ImageView
+        android:id="@+id/imageterung"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/terung"
+        android:contentDescription="@string/monitoringterung"
+        app:layout_constraintBottom_toBottomOf="@+id/kotakterong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="@+id/kotakterong"
+        app:layout_constraintTop_toTopOf="@+id/kotakterong"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/bold"
+        android:text="Budidaya Tanaman Terung"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kotakterong"
+        app:layout_constraintEnd_toEndOf="@+id/kotakterong"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageterung"
+        app:layout_constraintTop_toTopOf="@+id/kotakterong"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <View
+        android:id="@+id/kotaktomat"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/kotak2"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotakterong"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/tomat"
+        android:contentDescription="@string/tanaman_tomat"
+        app:layout_constraintBottom_toBottomOf="@+id/kotaktomat"
+        app:layout_constraintEnd_toEndOf="@+id/kotaktomat"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="@+id/kotaktomat"
+        app:layout_constraintTop_toTopOf="@+id/kotaktomat"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <TextView
+        android:id="@+id/textTanamanTomat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="Budidaya Tanaman Tomat"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kotaktomat"
+        app:layout_constraintEnd_toEndOf="@+id/kotaktomat"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/kotaktomat"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/viewwebButtonTomat"
+        android:layout_width="118dp"
+        android:layout_height="34dp"
+        android:background="@drawable/buttonlihat"
+        android:contentDescription="@string/tanaman_terung"
+        android:fontFamily="@font/bold"
+        android:text="Lihat"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/kotaktomat"
+        app:layout_constraintEnd_toEndOf="@+id/kotaktomat"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/textTanamanTomat"
+        app:layout_constraintVertical_bias="0.622"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

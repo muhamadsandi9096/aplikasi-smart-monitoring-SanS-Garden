@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/accountsc"
+    tools:context=".Notification">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/notificationtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/bold"
+            android:text="Status"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01999998" />
+
+
+        <View
+            android:id="@+id/kotakstatusterong"
+            android:layout_width="322dp"
+            android:layout_height="125dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintBottom_toTopOf="@+id/kotakstatustomat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notificationtitle"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <ImageView
+            android:id="@+id/terunggambarstatus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/terung"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatusterong"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatusterong"
+            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintStart_toStartOf="@+id/kotakstatusterong"
+            app:layout_constraintTop_toTopOf="@+id/kotakstatusterong"
+            app:layout_constraintVertical_bias="0.95" />
+
+        <TextView
+            android:id="@+id/terungpompatext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/pompa"
+            android:textColor="@color/BlackBlue"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatusterong"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatusterong"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toEndOf="@+id/terungpompagambar"
+            app:layout_constraintTop_toTopOf="@+id/kotakstatusterong"
+            app:layout_constraintVertical_bias="0.081" />
+
+        <TextView
+            android:id="@+id/terungstatuspompatext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/bold"
+            android:text="Tidak Aktif"
+            android:textColor="@color/biru"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatusterong"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatusterong"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toEndOf="@+id/terungpompagambar"
+            app:layout_constraintTop_toBottomOf="@+id/terungpompatext"
+            app:layout_constraintVertical_bias="0.09" />
+
+        <TextView
+            android:id="@+id/statusnyiramterungtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/bold"
+            android:text="Tanah masih lembab"
+            android:textColor="@color/Gray"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatusterong"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatusterong"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/statusnyiramterung"
+            app:layout_constraintTop_toBottomOf="@+id/terungstatuspompatext" />
+
+        <TextView
+            android:id="@+id/statusnyiramterung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/bold"
+            android:text="Status : "
+            android:textColor="@color/Gray"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatusterong"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatusterong"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintStart_toStartOf="@+id/kotakstatusterong"
+            app:layout_constraintTop_toBottomOf="@+id/terungpompagambar" />
+
+        <ImageView
+            android:id="@+id/terungpompagambar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pompa"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatusterong"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatusterong"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="@+id/kotakstatusterong"
+            app:layout_constraintTop_toTopOf="@+id/kotakstatusterong"
+            app:layout_constraintVertical_bias="0.112" />
+
+
+        <View
+            android:id="@+id/kotakstatustomat"
+            android:layout_width="322dp"
+            android:layout_height="125dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tomatgambarstatus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tomat"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat"
+            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintStart_toStartOf="@+id/kotakstatustomat"
+            app:layout_constraintTop_toTopOf="@+id/kotakstatustomat"
+            app:layout_constraintVertical_bias="0.95" />
+
+        <TextView
+            android:id="@+id/pompatext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="@string/pompa"
+            android:textColor="@color/BlackBlue"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toEndOf="@+id/tomatpompagambar"
+            app:layout_constraintTop_toTopOf="@+id/kotakstatustomat"
+            app:layout_constraintVertical_bias="0.081" />
+
+        <TextView
+            android:id="@+id/tomatstatuspompatext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/bold"
+            android:text="Tidak Aktif"
+            android:textColor="@color/biru"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toEndOf="@+id/tomatpompagambar"
+            app:layout_constraintTop_toBottomOf="@+id/pompatext"
+            app:layout_constraintVertical_bias="0.09" />
+
+        <TextView
+            android:id="@+id/tomatstatusnyiramtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/bold"
+            android:text="Tanah masih lembab"
+            android:textColor="@color/Gray"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tomatstatusnyiram"
+            app:layout_constraintTop_toBottomOf="@+id/tomatstatuspompatext" />
+
+        <TextView
+            android:id="@+id/tomatstatusnyiram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/bold"
+            android:text="Status : "
+            android:textColor="@color/Gray"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintStart_toStartOf="@+id/kotakstatustomat"
+            app:layout_constraintTop_toBottomOf="@+id/tomatpompagambar" />
+
+        <ImageView
+            android:id="@+id/tomatpompagambar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pompa"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="@+id/kotakstatustomat"
+            app:layout_constraintTop_toTopOf="@+id/kotakstatustomat"
+            app:layout_constraintVertical_bias="0.112" />
+
+
+        <View
+            android:id="@+id/kotakstatustomat2"
+            android:layout_width="322dp"
+            android:layout_height="125dp"
+            android:background="@drawable/kotak"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kotakstatustomat"
+            app:layout_constraintVertical_bias="0.19999999" />
+
+        <ImageView
+            android:id="@+id/tomatgambarstatus2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tomat"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat2"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat2"
+            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintStart_toStartOf="@+id/kotakstatustomat2"
+            app:layout_constraintTop_toTopOf="@+id/kotakstatustomat2"
+            app:layout_constraintVertical_bias="0.95" />
+
+        <TextView
+            android:id="@+id/lamputext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="Lampu"
+            android:textColor="@color/BlackBlue"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat2"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat2"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toEndOf="@+id/tomatlampugambar"
+            app:layout_constraintTop_toTopOf="@+id/kotakstatustomat2"
+            app:layout_constraintVertical_bias="0.081" />
+
+        <TextView
+            android:id="@+id/tomatstatuslamputext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/bold"
+            android:text="Tidak Aktif"
+            android:textColor="@color/biru"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat2"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat2"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toEndOf="@+id/tomatlampugambar"
+            app:layout_constraintTop_toBottomOf="@+id/lamputext"
+            app:layout_constraintVertical_bias="0.09" />
+
+        <TextView
+            android:id="@+id/statuslamputomattext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/bold"
+            android:text="Lampu tidak menyala"
+            android:textColor="@color/Gray"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat2"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tomatstatuslampu"
+            app:layout_constraintTop_toBottomOf="@+id/tomatstatuslamputext" />
+
+        <TextView
+            android:id="@+id/tomatstatuslampu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/bold"
+            android:text="Status : "
+            android:textColor="@color/Gray"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat2"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat2"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintStart_toStartOf="@+id/kotakstatustomat2"
+            app:layout_constraintTop_toBottomOf="@+id/tomatlampugambar" />
+
+        <ImageView
+            android:id="@+id/tomatlampugambar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/lampulogo"
+            app:layout_constraintBottom_toBottomOf="@+id/kotakstatustomat2"
+            app:layout_constraintEnd_toEndOf="@+id/kotakstatustomat2"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="@+id/kotakstatustomat2"
+            app:layout_constraintTop_toTopOf="@+id/kotakstatustomat2"
+            app:layout_constraintVertical_bias="0.112" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">SanS Garden</string>
+    <string name="title_activity_register">Register</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="welcome1">Welcome!</string>
+    <string name="register1">Register</string>
+    <string name="you_have_an_account">You have an account?</string>
+    <string name="sign_in">Sign in.</string>
+    <string name="email_address1">Email Address</string>
+    <string name="password1">Password</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_the_password">Forgot The Password?</string>
+    <string name="you_are_not_a_member">You are not a member?</string>
+    <string name="text_register">Register.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="email_address2">Email Address</string>
+    <string name="title_activity_screen_bna">screen_BNA</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_bna_screen">bna_screen</string>
+    <string name="page_title">%s page is selected</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="setting">Setting</string>
+    <string name="notification">Notification</string>
+    <string name="mari_belajar">Mari Belajar</string>
+    <string name="ayo_belajar_bagaimana_membudidaya_tanaman_terung_dan_tomat">Ayo Belajar bagaimana membudidaya tanaman Terung dan Tomat.</string>
+    <string name="budidaya_tanaman">Budidaya Tanaman</string>
+    <string name="kumpulan_referensi_artikel">Kumpulan Referensi Artikel</string>
+    <string name="lihat">Lihat</string>
+    <string name="monitoringterung">MonitoringTerung</string>
+    <string name="tanaman_terung">Tanaman Terung</string>
+    <string name="tanaman_tomat">Tanaman Tomat</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="about_us">About Us</string>
+    <string name="back">BACK</string>
+    <string name="isiaboutus1"><b>Aplikasi SanS Garden</b> merupakan aplikasi monitoring IoT perkebunan yang dibuat khusus untuk membantu dalam perancangan proyek <u>Penulisan Ilmiah</u> dan <u>Proyek Sistem Komputer</u>. Aplikasi ini dirancang dan dibuat oleh <b>Muhamad Sandi Hidayat</b> (23119942) salah satu mahasiswa Jurusan Sistem Komputer, Fakultas Ilmu Komputer dan Teknologi Informasi, Universitas Gunadarma.</string>
+    <string name="isiaboutus2"><b> Fitur SanS Garden\n </b>
+<p>Dapat memonitoring kondisi tanaman secara Real Time pada proyek Penulisan Ilmiah dan Proyek Sistem Komputer.\n</p>
+<p>Dapat mengaktifkan dan mematikan pompa air secara manual ataupun otomatis.\n</p>
+<p>Dapat mengaktifkan dan mematikan Lampu secara manual ataupun otomatis.\n</p></string>
+    <string name="logosansgarden">logosansgarden</string>
+    <string name="by_muhamad_sandi_hidayat">by Muhamad Sandi Hidayat</string>
+    <string name="logogundar">logogundar</string>
+    <string name="detail_monitoring">Detail Monitoring</string>
+    <string name="backmonitoringterung">backmonitoringterung</string>
+    <string name="greenhouse_monitoring">Greenhouse Monitoring</string>
+    <string name="tanaman_terung_1">Tanaman Terung</string>
+    <string name="bojonggede_kab_bogor">Bojonggede, Kab.Bogor</string>
+    <string name="kelapa_dua_depok">Kelapa Dua, Depok</string>
+    <string name="others">Others</string>
+    <string name="monitoring_tanaman">Monitoring Tanaman</string>
+    <string name="kelembaban_tanah">Kelembaban Tanah</string>
+    <string name="temperature_udara">Suhu Udara</string>
+    <string name="kelembaban_udara">Kelembaban Udara</string>
+    <string name="cahaya">Cahaya</string>
+    <string name="ph">pH</string>
+    <string name="cuaca">Cuaca</string>
+    <string name="tangki_air">Tangki Air</string>
+    <string name="persen">%</string>
+    <string name="celcius">°C</string>
+    <string name="phvalue">7</string>
+    <string name="value">100</string>
+    <string name="ph2">pH</string>
+    <string name="suhuvalue">29.00</string>
+    <string name="tangkivalue">penuh</string>
+    <string name="cuacavalue">terang</string>
+    <string name="manual">Manual</string>
+    <string name="pompa">Pompa</string>
+</resources>

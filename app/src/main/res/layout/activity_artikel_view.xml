@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/artikelview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtikelView"
+    android:background="@color/BlackBlue"
+    tools:ignore="ScrollViewCount"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/backArtikelview"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_baseline_arrow_back_24" />
+    <WebView
+        android:id="@+id/artikelview1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp">
+
+    </WebView>
+
+
+</LinearLayout>
