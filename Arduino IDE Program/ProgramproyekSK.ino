@@ -9,12 +9,12 @@
 #include <Firebase_ESP_Client.h>
 
 //~~~~~~~~~~~~~~~~~~Wifi dan Fire Base~~~~~~~~~~~~~~~~~~//
-#define WIFI_SSID "Muskin Asikin"
-#define WIFI_PASSWORD "C4tur26TBL"
+#define WIFI_SSID "your ssid name"
+#define WIFI_PASSWORD "your password"
 
-#define API_KEY "qqqq8f0r5YQveu0e1uxllh0wl6CQv71JMTlgP3IfX4yV"
-#define DATABASE_URL "https://sansgarden-275d2-default-rtdb.asia-southeast1.firebasedatabase.app/"
-#define FIREBASE_PROJECT_ID "sansgarden-275d2"
+#define API_KEY "qqqq8f0r5YQveu0e1uxllh0wl6CQv71JMTlgP3IfX4yV" //change api key firebase
+#define DATABASE_URL "https://sansgarden-275d2-default-rtdb.asia-southeast1.firebasedatabase.app/" //change database url
+#define FIREBASE_PROJECT_ID "sansgarden-275d2" //change project id
 FirebaseData firebaseData;
 FirebaseJson cahaya;
 FirebaseJson pH;
