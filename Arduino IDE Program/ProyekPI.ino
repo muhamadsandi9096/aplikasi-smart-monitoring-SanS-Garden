@@ -9,13 +9,11 @@
 
 
 //~~~~~~~~~~~~~~~~~~Wifi dan Fire Base~~~~~~~~~~~~~~~~~~//
-//#define WIFI_SSID "Muskin Asikin"
-//#define WIFI_PASSWORD "C4tur26TBL"
-#define WIFI_SSID "vivo 1915"
-#define WIFI_PASSWORD "Sandi971"
+#define WIFI_SSID "your ssid wifi"
+#define WIFI_PASSWORD "your password"
 
-#define API_KEY "8f0r5YQveu0e1uxllh0wl6CQv71JMTlgP3IfX4yV"
-#define DATABASE_URL "https://sansgarden-275d2-default-rtdb.asia-southeast1.firebasedatabase.app/"
+#define API_KEY "8f0r5YQveu0e1uxllh0wl6CQv71JMTlgP3IfX4yV" //change api key
+#define DATABASE_URL "https://sansgarden-275d2-default-rtdb.asia-southeast1.firebasedatabase.app/" //change database URL
 FirebaseData firebaseData;
 FirebaseJson pH;
 FirebaseJson suhu;
