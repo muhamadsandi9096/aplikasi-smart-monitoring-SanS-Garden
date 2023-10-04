@@ -1,2 +1,2 @@
 # aplikasi-smart-monitoring-SanS-Garden
-Repository untuk menyimpan berbagai percobaan
+Projrct aplikasi untung mendukung penelitian ilmiah dari sistem purwarupa monitoring dan kontrol penyiraman tanaman
