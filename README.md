@@ -20,3 +20,5 @@ Project ini merupakan project penelitian ilmiah dari sistem purwarupa monitoring
 4. Mikrokontroler ESP32
 5. Sensor Kelembaban Tanah, cahaya, suhu dan kelembaban udara, kadar pH tanah, dan cuaca.
 6. Komponen output alat seperti relay, LCD I2C (20x4), Relay, Pompa DC 12V.
+
+<img align="left" src="images/rangkaian Skematik PI.jpg" width="200">
